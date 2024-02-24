@@ -1,0 +1,50 @@
+
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Micro+5&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="text-center" style="background-color: cyan;">
+    <div class="col-xs-12 header_div" style="background-color: orange;">
+      <h2>Animal Noises</h2>
+      <p>Note: This model can detect animal's noises: barking, and meowing, and also background noise.</p>
+    </div>
+    <br>
+    <br>
+
+    <div class="main_div" style="bottom:10%; margin-top: 50px">
+          <button class="btn btn-success" id="start" style="bottom: 10%; margin-top: 50px;" onclick="startClassification();">START</button>
+          <br><br>
+          <span id="result_dog">Detected a Dog 0 times, and </span>
+          <span id="result_cat">detected a Cat 0 times</span>
+          <h2 id="result">Detected Background Noise</h2>
+          <img src="listen.gif" width="300" height="300">
+
+          
+          <br>
+    </div>
+    <div id="copyright">
+      © 2024 Unknown People Corporation Inc.
+  </div>
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
